@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>geomac</title>
+<link rel="shortcut icon" href="./assets/image/favicon.ico" type="image/ico">
+<script src="./assets/js/switch_to_english.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link rel="stylesheet" href="./assets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="./assets/normalize.css">
+<script src="./assets/js/geomac_version.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(73124032, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/73124032" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+<header class="page-header" role="banner">
+  <h1 class="project-name">geomac</h1>
+  <h2 class="project-tagline">Простая программа для определения местоположения точек доступа Wi-Fi по их BSSID</h2>
+  <a href="#downloads" class="btn">Скачать</a>
+  <a href="#usage" class="btn">Использование</a>
+  <a href="#faq" class="btn">Часто задаваемые вопросы</a>
+</header>
+
+<main id="content" class="main-content" role="main">
+<h2 id="about">О программе</h2>
+<p><strong>geomac</strong> — это программа, которая позволяет находить географическое местоположение роутеров и точек доступа Wi-Fi по их MAC-адресам (также известны как BSSID). geomac получает данные о местоположении точек доступа от сетевых провайдеров геолокации (таких, как Яндекс Локатор, Google, Mylnikov.org и др.), которые, в свою очередь, собирают эти данные благодаря краудсорсингу через свои мобильные приложения.</p>
+<p>Программа может быть полезна экспертам сетевой разведки (OSINT, open source intelligence), а также исследователям беспроводных сетей и вардрайверам (от англ. wardriving).</p>
+
+<h2 id="features">Особенности</h2>
+<ul>
+  <li>ищет местоположение, опираясь на данные пяти провайдеров геолокации</li>
+  <li>кроссплатформенная</li>
+  <li>имеет консольную и графическую версии</li>
+  <li>отправляет HTTP-запросы асинхронно для ускорения процедуры поиска</li>
+  <li>принимает MAC-адреса в различных форматах</li>
+</ul>
+
+<h2 id="screenshots">Скриншоты</h2>
+<div class="flex">
+  <div class="screenshot"><img src="./assets/image/screenshot/windows.png" alt="geomac Windows screenshot"></div>
+  <div class="screenshot"><img src="./assets/image/screenshot/linux.png" alt="geomac Linux screenshot"></div>
+</div>
+
+<h2 id="downloads">Загрузки</h2>
+<p>Последняя версия: <strong id="geomac_release"><noscript>sorry, JavaScript support is required</noscript></strong></p>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/linux.png" class="icon">Linux</summary>
+  <p><a href="./dist/linux/geomac-0.1-1-x86_64.pkg.tar.zst"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux x86_x64</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-pentium4.pkg.tar.zst"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux 32 pentium4</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-aarch64.pkg.tar.xz"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux ARM aarch64</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-armv7h.pkg.tar.xz"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux ARM armv7h</a></p>
+  <p><a href="./dist/linux/geomac-amd64.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu amd64</a></p>
+  <p><a href="./dist/linux/geomac-i386.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu i386</a></p>
+  <p><a href="./dist/linux/geomac-arm64.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu arm64</a></p>
+  <p><a href="./dist/linux/geomac-armhf.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu armhf</a></p>
+  <p><a href="./dist/linux/static/geomac-x86_64"><img src="./assets/image/icon/linux.png" class="icon">Статичный исполняемый файл (консольная версия) x86_64</a></p>
+  <p><a href="./dist/linux/static/geomac-x86"><img src="./assets/image/icon/linux.png" class="icon">Статичный исполняемый файл (консольная версия) x86</a></p>
+  <p><a href="./dist/linux/static/geomac-aarch64"><img src="./assets/image/icon/linux.png" class="icon">Статичный исполняемый файл (консольная версия) aarch64</a></p>
+  <p><a href="./dist/linux/static/geomac-armv7"><img src="./assets/image/icon/linux.png" class="icon">Статичный исполняемый файл (консольная версия) armv7</a></p>
+</details>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/android.png" class="icon">Android</summary>
+  <p><a href="./dist/linux/termux/geomac_0.1_aarch64.deb"><img src="./assets/image/icon/termux.png" class="icon"/>Termux aarch64</a></p>
+</details>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/windows.png" class="icon">Windows</summary>
+  <p><a href="./dist/windows/geomac_setup.exe"><img src="./assets/image/icon/windows.png" class="icon"/>Установщик (32/64-разрядный)</a></p>
+  <p><a href="./dist/windows/geomac_portable_32.7z"><img src="./assets/image/icon/windows.png" class="icon"/>Переносимая версия (32-разрядная)</a></p>
+  <p><a href="./dist/windows/geomac_portable_64.7z"><img src="./assets/image/icon/windows.png" class="icon"/>Переносимая версия (64-разрядная)</a></p>
+</details>
+
+<h3 id="installation_notes">Замечания по установке на Linux</h3>
+Пакеты для Linux включают в себя консольную и графическую версии программы.
+Скачайте пакет, соответствующий вашему дистрибутиву и архитектуре ЦП, и установите его.
+<h4>Debian, Ubuntu, Linux Mint и производные</h4>
+На данный момент программа поддерживает Debian 10 и выше, Ubuntu 18.04 и выше.<br>
+Можно установить с помощью apt:
+<blockquote class="code_snippet">sudo apt install ПУТЬ</blockquote>
+к примеру:
+<blockquote class="code_snippet">sudo apt install ./geomac-amd64.deb</blockquote>
+или с помощью <a href="https://launchpad.net/gdebi" target="_blank" >Gdebi</a>.
+<h4>Arch Linux, Manjaro и подобные</h4>
+Установка с помощью pacman:
+<blockquote class="code_snippet">sudo pacman -U ПУТЬ</blockquote>
+к примеру:
+<blockquote class="code_snippet">sudo pacman -U geomac-0.1-1-x86_64.pkg.tar.zst</blockquote>
+<h4>Другие дистрибутивы Linux</h4>
+<ol>
+  <li>Скачайте статичный исполняемый файл, соответствующий архитектуре вашего ЦП.</li>
+  <li>Поместите его в <span style="font-family: monospace">/usr/bin/</span>, к примеру, <span style="font-family: monospace">/usr/bin/geomac</span>.</li>
+  <li>
+    Предоставьте права на исполнение файла:<br>
+    <blockquote class="code_snippet">sudo chmod +x /usr/bin/geomac</blockquote>
+  </li>
+</ol>
+<h4>Android/Termux</h4>
+Установка с помощью dpkg:
+<blockquote class="code_snippet">dpkg -i ПУТЬ</blockquote>
+
+<h2 id="usage">Использование</h2>
+<h3>Использование консольной версии</h3>
+Консольная версия поставляется для Linux и Windows (для Windows рекомендуется добавить geomac в PATH при установке).<br>
+Использование:
+<blockquote class="code_snippet">geomac [-P] &lt;bssids&gt;</blockquote>
+Примеры:
+<pre>
+$ geomac 34e8940e3cde
+Results for 34:E8:94:0E:3C:DE
+Google          | -37.9029556, 144.7619731
+Apple           | -37.90275955, 144.76197814
+</pre>
+<pre>
+$ geomac -P 34e8940e3cde
+Results for 34:E8:94:0E:3C:DE
+Google          | -37.9029556, 144.7619731
+Yandex Locator  | not found
+Microsoft       | not found
+Apple           | -37.90275955, 144.76197814
+Mylnikov.org    | not found
+</pre>
+<pre>
+$ geomac 0c:b5:27:d9:d5:cc f8:e9:03:14:30:4a
+Results for 0C:B5:27:D9:D5:CC
+Google          | 33.5072744, -7.6533991
+Apple           | 33.50793457, -7.65461874
+
+Results for F8:E9:03:14:30:4A
+Google          | 32.0674328, 34.8164628
+Yandex Locator  | 32.0674324, 34.8162308
+Apple           | 32.06740188, 34.81635284
+</pre>
+<h3>Использование графической версии</h3>
+<p>
+  В дистрибутивах Linux, соответствующих стандартам freedesktop, графическая версия доступна из меню "Приложения":<br>
+  <strong>Приложения → Интернет → geomac</strong><br>
+  или<br>
+  <strong>Приложения → Инструменты → geomac</strong><br>
+</p>
+<p>
+  Также можно запустить её из терминала:
+  <blockquote class="code_snippet">geomac-gui</blockquote>
+<p>
+  На Windows графическая версия запускается из <strong>меню Пуск → geomac</strong>
+</p>
+
+<h2 id="faq">Ответы на часто задаваемые вопросы</h2>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Как работает программа?</summary>
+  <p>Для того чтобы найти местоположение точки доступа Wi-Fi, нужно знать её BSSID (MAC-адрес Wi-Fi), который, по сути, является её уникальным идентификатором. После того, как программа получает BSSID, она отправляет специально сформированные HTTP-запросы на серверы провайдеров геолокации и в ответ получает информацию о местоположении, из которой выделяет широту и долготу. Программа включает в себя разных провайдеров местоположения, чтобы охватить как можно большее количество точек доступа, а также чтобы дать пользователю возможность сравнить результаты. Такие геопровайдеры, как Яндекс Локатор, Google, Apple, Microsoft, собирают данные о местонахождении точек доступа от пользователей смартфонов, планшетов, ноутбуков со спутниковой навигацией через свои мобильные приложения и сервисы.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Какие геопровайдеры использует программа?</summary>
+  <p>На данный момент в программе реализовано 5 провайдеров местоположения: Яндекс Локатор, Mylnikov.org, Apple, Microsoft и Google.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Как узнать BSSID (MAC-адрес) точки доступа?</summary>
+  <p>Чтобы узнать BSSID точки доступа, которая находится рядом с вами, можно воспользоваться сканерами Wi-Fi, такими, как LinSSID, iw, wireless-tools (Linux), WiFi Analyzer (Android), inSSIDer (Microsoft Windows) либо специализированным ПО для аудита безопасности беспроводных сетей и вардрайвинга: Kismet, airodump-ng, wash, Wifite, OneShot (Linux), WPSApp, WiFi Warden, WIFI WPS WPA TESTER (Android).</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Как найти точку доступа на карте?</summary>
+  <p>Когда вы получили координаты точки доступа (два дробных числа, широту и долготу), скопируйте их в буфер обмена и вставьте в поле поиска сервиса <a href="https://yandex.ru/maps">Яндекс.Карты</a> или <a href="https://www.google.com/maps">Google Карты</a> и нажмите Enter.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Насколько точно программа определяет местоположение?</summary>
+  <p>Точность определения зависит от множества условий: расположение роутера, геопровайдер, погодные условия во время сканирования краудсорсером, оборудование краудсорсера и др. В большинстве случаев точность составляет 10-50 метров.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Что делать, если программа не нашла точку доступа?</summary>
+  <p>Подождите некоторое время, спустя которое повторите поиск. Возможно, вы столкнулись со случаем, когда точка доступа появилась в эфире недавно, и ни один из геопровайдеров ещё не успел её зарегистрировать. Также попробуйте воспользоваться другими сервисами, например, <a href="https://wigle.net">WiGLE</a>.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Почему программа проприетарная (автор не делится исходными кодами)?</summary>
+  <p>В программе реализовано оригинальное решение, которое не было представлено где-либо в публичном доступе. Я как автор этой программы уважаю владельцев сервисов, которые использует программа, и не хочу публиковать информацию, которую не публикуют они. Возможно, я опубликую исходники в будущем.</p>
+</details>
+
+<h2 id="author">Авторство</h2>
+Эта программа была разработана Виктором Голованенко в надежде сделать мир чуточку лучше.<br>
+Связь со мной:<br>
+<!-- Protect E-Mail -->
+<script>
+{coded = "40814081uXvU@8ct4Zb.IKB"
+  key = "NScir2HgjbM36KT7zL5nBV4JeIE0uO1GwAqflyhCPatskUWZxDXFovRQ9pYm8d"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+}
+</script><noscript>Пожалуйста, включите поддержку JavaScript, чтобы отобразить E-Mail.</noscript><br>
+<!-- /Protect E-Mail -->
+<a href="https://t.me/longcompetition" target="_blank">Telegram</a><br>
+<a href="https://github.com/drygdryg" target="_blank">GitHub</a>
+
+<h2 id="acknowledgements">Благодарности</h2>
+<p>Отдельное большое спасибо человеку под ником <a href="https://github.com/Jemacivan">Jemacivan</a> за то, что он начал создание установщика для Windows, помогал с тестированием, со сборкой geomac для разных платформ, с созданием этой веб-страницы.</p>
+<p>
+  Большое спасибо разработчикам и сообществу <a href="https://nim-lang.org/" target="_blank">языка программирования Nim</a>, я написал эту программу  на Nim с использованием следующих открытых библиотек:
+  <ul>
+    <li><a href="https://github.com/iffy/nim-argparse" target="_blank">argparse</a> [лицензия MIT]</li>
+    <li><a href="https://github.com/trustable-code/NiGui" target="_blank">NiGui</a> [лицензия MIT]</li>
+    <li><a href="https://github.com/ivankoster/protobuf-nim" target="_blank">protobuf</a> [лицензия MIT]</li>
+    <li><a href="https://github.com/oswjk/nimpb" target="_blank">nimpb</a> [лицензия MIT]</li>
+    <li><a href="https://github.com/OpenSystemsLab/struct.nim" target="_blank">struct</a> [лицензия MIT]</li>
+    <li><a href="https://github.com/guzba/zippy" target="_blank">zippy</a> [лицензия MIT]</li>
+  </ul>
+  так что большое спасибо их создателям.
+<p>Также я хочу выразить благодарность человеку под ником <a href="https://github.com/Yardanico">Yardanico</a>, благодаря которому я узнал о языке программирования Nim и заинтересовался его изучением. Он, к тому же, неоднократно выручал меня, когда у меня были вопросы по Nim.</p>
+
+<footer class="site-footer">
+  <span class="site-footer-credits">© Виктор Голованенко, 2021</span>
+</footer>
+</main>
+
+<!-- Minimize spoiler when opening another -->
+<script>
+var details = document.querySelectorAll("details");
+for(i=0;i<details.length;i++) {
+  details[i].addEventListener("toggle", accordion);
+}
+function accordion(event) {
+  if (!event.target.open) return;
+    var details = event.target.parentNode.children;
+    for(i=0;i<details.length;i++) {
+      if (details[i].tagName != "DETAILS" || 
+         !details[i].hasAttribute('open') || 
+         event.target == details[i]) {
+         continue;
+      }
+      details[i].removeAttribute("open");
+    }
+}
+</script>
+<!-- /Minimize spoiler when opening another -->
+</body></html>

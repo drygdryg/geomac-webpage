@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>geomac</title>
+<link rel="shortcut icon" href="./assets/image/favicon.ico" type="image/ico">
+<script src="./assets/js/switch_to_russian.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link rel="stylesheet" href="./assets/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#157878">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="./assets/normalize.css">
+<script src="./assets/js/geomac_version.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(73124032, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/73124032" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+<header class="page-header" role="banner">
+  <h1 class="project-name">geomac</h1>
+  <h2 class="project-tagline">A simple program to get geolocation of Wi-Fi access points by their BSSIDs</h2>
+  <a href="#downloads" class="btn">Downloads</a>
+  <a href="#usage" class="btn">Usage</a>
+  <a href="#faq" class="btn">FAQ</a>
+</header>
+
+<main id="content" class="main-content" role="main">
+<h2 id="about">About</h2>
+<p><strong>geomac</strong> helps you to find the geographic location of Wi-Fi access points by their MAC addresses (also
+known as BSSIDs). geomac receives data about the location of access points from network geolocation
+providers (such as Yandex Locator, Google, Mylnikov.org, etc.), which, in turn, collect this data
+through crowdsourcing in their mobile applications.</p>
+<p>This program may be useful for OSINT experts, wireless network researchers and wardrivers.</p>
+
+<h2 id="features">Features</h2>
+<ul>
+  <li>searches for a location using data from five network location providers</li>
+  <li>cross-platform</li>
+  <li>has console and GUI versions</li>
+  <li>sends HTTP requests asynchronously to speed up lookups</li>
+  <li>accepts MAC addresses in various formats</li>
+</ul>
+
+<h2 id="screenshots">Screenshots</h2>
+<div class="flex">
+  <div class="screenshot"><img src="./assets/image/screenshot/windows.png" alt="geomac Windows screenshot"></div>
+  <div class="screenshot"><img src="./assets/image/screenshot/linux.png" alt="geomac Linux screenshot"></div>
+</div>
+
+<h2 id="downloads">Downloads</h2>
+<p>Current version: <strong id="geomac_release"><noscript>sorry, JavaScript support is required</noscript></strong></p>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/linux.png" class="icon">Linux</summary>
+  <p><a href="./dist/linux/geomac-0.1-1-x86_64.pkg.tar.zst"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux x86_x64</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-pentium4.pkg.tar.zst"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux 32 pentium4</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-aarch64.pkg.tar.xz"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux ARM aarch64</a></p>
+  <p><a href="./dist/linux/geomac-0.1-1-armv7h.pkg.tar.xz"><img src="./assets/image/icon/archlinux.png" class="icon">Arch Linux ARM armv7h</a></p>
+  <p><a href="./dist/linux/geomac-amd64.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu amd64</a></p>
+  <p><a href="./dist/linux/geomac-i386.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu i386</a></p>
+  <p><a href="./dist/linux/geomac-arm64.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu arm64</a></p>
+  <p><a href="./dist/linux/geomac-armhf.deb"><img src="./assets/image/icon/debian.png" class="icon">Debian/Ubuntu armhf</a></p>
+  <p><a href="./dist/linux/static/geomac-x86_64"><img src="./assets/image/icon/linux.png" class="icon">Statically linked CLI version x86_64</a></p>
+  <p><a href="./dist/linux/static/geomac-x86"><img src="./assets/image/icon/linux.png" class="icon">Statically linked CLI version x86</a></p>
+  <p><a href="./dist/linux/static/geomac-aarch64"><img src="./assets/image/icon/linux.png" class="icon">Statically linked CLI version aarch64</a></p>
+  <p><a href="./dist/linux/static/geomac-armv7"><img src="./assets/image/icon/linux.png" class="icon">Statically linked CLI version armv7</a></p>
+</details>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/android.png" class="icon">Android</summary>
+  <p><a href="./dist/linux/termux/geomac_0.1_aarch64.deb"><img src="./assets/image/icon/termux.png" class="icon"/>Termux aarch64</a></p>
+</details>
+<details class="dl_spoiler">
+  <summary class="dl_spoiler"><img src="./assets/image/icon/windows.png" class="icon">Windows</summary>
+  <p><a href="./dist/windows/geomac_setup.exe"><img src="./assets/image/icon/windows.png" class="icon"/>Installer (32/64 bit)</a></p>
+  <p><a href="./dist/windows/geomac_portable_32.7z"><img src="./assets/image/icon/windows.png" class="icon"/>Portable (32-bit)</a></p>
+  <p><a href="./dist/windows/geomac_portable_64.7z"><img src="./assets/image/icon/windows.png" class="icon"/>Portable (64-bit)</a></p>
+</details>
+
+<h3 id="installation_notes">Linux installation notes</h3>
+Linux packages include console and GUI versions of the program.
+Download the package that matches your distribution and your CPU architecture and install it.
+<h4>Debian, Ubuntu, Linux Mint and derivatives</h4>
+Currently the program supports Debian 10 and above, Ubuntu 18.04 and above.<br>
+Install using apt:
+<blockquote class="code_snippet">sudo apt install PATH</blockquote>
+for example:
+<blockquote class="code_snippet">sudo apt install ./geomac-amd64.deb</blockquote>
+or using <a href="https://launchpad.net/gdebi" target="_blank" >Gdebi</a>.
+<h4>Arch Linux, Manjaro and similar</h4>
+Install using pacman:
+<blockquote class="code_snippet">sudo pacman -U PATH</blockquote>
+for example:
+<blockquote class="code_snippet">sudo pacman -U geomac-0.1-1-x86_64.pkg.tar.zst</blockquote>
+<h4>Other Linux distributions</h4>
+<ol>
+  <li>Download the static executable that matches your CPU architecture.</li>
+  <li>Put it in <span style="font-family: monospace">/usr/bin/</span>, for example, <span style="font-family: monospace">/usr/bin/geomac</span>.</li>
+  <li>
+    Grant execute permission to this file:<br>
+    <blockquote class="code_snippet">sudo chmod +x /usr/bin/geomac</blockquote>
+  </li>
+</ol>
+<h4>Android/Termux</h4>
+Install using:
+<blockquote class="code_snippet">dpkg -i PATH</blockquote>
+
+<h2 id="usage">Usage</h2>
+<h3>CLI version usage</h3>
+Command line version is available on Linux and Windows (you should add geomac to PATH during installation).<br>
+Usage:
+<blockquote class="code_snippet">geomac [-P] &lt;bssids&gt;</blockquote>
+Examples:
+<pre>
+$ geomac 34e8940e3cde
+Results for 34:E8:94:0E:3C:DE
+Google          | -37.9029556, 144.7619731
+Apple           | -37.90275955, 144.76197814
+</pre>
+<pre>
+$ geomac -P 34e8940e3cde
+Results for 34:E8:94:0E:3C:DE
+Google          | -37.9029556, 144.7619731
+Yandex Locator  | not found
+Microsoft       | not found
+Apple           | -37.90275955, 144.76197814
+Mylnikov.org    | not found
+</pre>
+<pre>
+$ geomac 0c:b5:27:d9:d5:cc f8:e9:03:14:30:4a
+Results for 0C:B5:27:D9:D5:CC
+Google          | 33.5072744, -7.6533991
+Apple           | 33.50793457, -7.65461874
+
+Results for F8:E9:03:14:30:4A
+Google          | 32.0674328, 34.8164628
+Yandex Locator  | 32.0674324, 34.8162308
+Apple           | 32.06740188, 34.81635284
+</pre>
+<h3>GUI version usage</h3>
+<p>
+  On Linux freedesktop platforms, the graphical version is available via<br>
+  <strong>Applications → Internet → geomac</strong><br>
+  or<br>
+  <strong>Applications → Accessories → geomac</strong><br>
+</p>
+<p>
+  You can also launch it from the terminal using
+  <blockquote class="code_snippet">geomac-gui</blockquote>
+<p>
+  On Windows, the graphical version is avaliable via <strong>Start menu → geomac</strong>
+</p>
+
+<h2 id="faq">FAQ</h2>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">How does the program work?</summary>
+  <p>In order to find the location of a Wi-Fi access point, you need to know its BSSID (Wi-Fi MAC address), which, in fact, is its unique identifier. After the program receives the BSSID, it sends specially generated HTTP requests to the servers of geolocation providers and in response receives location information, from which it allocates latitude and longitude. The program includes different location providers to cover as many access points as possible, as well as to give the user the opportunity to compare the results. Providers such as Yandex Locator, Google, Apple, Microsoft collect access point location data from users of smartphones, tablets, laptops with satellite navigation using their mobile applications and services.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">What network location providers does the program use?</summary>
+  <p>Currently geomac includes 5 location providers: Yandex Locator, Mylnikov.org, Apple, Microsoft and Google.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">How do I find the BSSID (MAC address) of an access point?</summary>
+  <p>To find out the BSSID of an access point that is located near you, you can use Wi-Fi scanners, such as LinSSID, iw, wireless-tools (Linux), WiFi Analyzer (Android), inSSIDer (Microsoft Windows), or specialized software for auditing the security of wireless networks and wardriving: Kismet, airodump-ng, wash, Wifite, OneShot (Linux), WPSApp, WiFi Warden, WIFI WPS WPA TESTER (Android).</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">How to find the access point on the map?</summary>
+  <p>When you know the coordinates of the access point (two fractional numbers, latitude and longitude), copy them to the clipboard and paste them into the search field on the <a href="https://www.google.com/maps">Google Maps</a> or <a href="https://yandex.ru/maps">Yandex.Maps</a> and press Enter.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">How accurately does geomac determine the location?</summary>
+  <p>The accuracy of the detection depends on many conditions: location of the router, network location provider, weather conditions during the crowdsourcing scan, crowdsourcing equipment, etc. In most cases, the accuracy is 10-50 meters.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">The program did not find my access point. What can I do?</summary>
+  <p>Wait a while and then search again. You may have encountered a case where the access point appeared on the air recently, and none of the network location providers have yet managed to register it. You can also try using other services, for example, <a href="https://wigle.net">WiGLE</a>.</p>
+</details>
+<details class="faq_spoiler">
+  <summary class="faq_spoiler">Why is the program proprietary (the author does not share the source code)?</summary>
+  <p>The program implements an original solution that has not been presented anywhere in the public domain. As the author of this program, I respect the owners of the services that the program uses, and I do not want to publish information that they do not publish. I may publish the source code in the future.</p>
+</details>
+
+<h2 id="author">Author</h2>
+This program was developed by Victor Golovanenko with the hope of making the world a little better.<br>
+Contact me:<br>
+<!-- Protect E-Mail -->
+<script>
+{coded = "40814081uXvU@8ct4Zb.IKB"
+  key = "NScir2HgjbM36KT7zL5nBV4JeIE0uO1GwAqflyhCPatskUWZxDXFovRQ9pYm8d"
+  shift=coded.length
+  link=""
+  for (i=0; i<coded.length; i++) {
+    if (key.indexOf(coded.charAt(i))==-1) {
+      ltr = coded.charAt(i)
+      link += (ltr)
+    }
+    else {     
+      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+      link += (key.charAt(ltr))
+    }
+  }
+document.write("<a href='mailto:"+link+"'>"+link+"</a>")
+}
+</script><noscript>Sorry, you need Javascript on to email me.</noscript><br>
+<!-- /Protect E-Mail -->
+<a href="https://t.me/longcompetition" target="_blank">Telegram</a><br>
+<a href="https://github.com/drygdryg" target="_blank">GitHub</a>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Special thanks to the person under the nickname <a href="https://github.com/Jemacivan">Jemacivan</a> for starting to create the Windows installer, helping with testing, with building geomac for different platforms, with creating this web page.</p>
+<p>
+  Many thanks to the developers and community of the <a href="https://nim-lang.org/" target="_blank">Nim programming language</a>, this program was built using Nim and the following open source libraries:
+  <ul>
+    <li><a href="https://github.com/iffy/nim-argparse" target="_blank">argparse</a> [MIT License]</li>
+    <li><a href="https://github.com/trustable-code/NiGui" target="_blank">NiGui</a> [MIT License]</li>
+    <li><a href="https://github.com/ivankoster/protobuf-nim" target="_blank">protobuf</a> [MIT License]</li>
+    <li><a href="https://github.com/oswjk/nimpb" target="_blank">nimpb</a> [MIT License]</li>
+    <li><a href="https://github.com/OpenSystemsLab/struct.nim" target="_blank">struct</a> [MIT License]</li>
+    <li><a href="https://github.com/guzba/zippy" target="_blank">zippy</a> [MIT License]</li>
+  </ul>
+  thanks to their developers.
+<p>Also, a special thanks to the person under the nickname <a href="https://github.com/Yardanico">Yardanico</a>, thanks to whom I learned about Nim and wanted to study it. He also helped me solve some problems with Nim.</p>
+
+<footer class="site-footer">
+  <span class="site-footer-credits">Copyright © 2021 Victor Golovanenko</span>
+</footer>
+</main>
+
+<!-- Minimize spoiler when opening another -->
+<script>
+var details = document.querySelectorAll("details");
+for(i=0;i<details.length;i++) {
+  details[i].addEventListener("toggle", accordion);
+}
+function accordion(event) {
+  if (!event.target.open) return;
+    var details = event.target.parentNode.children;
+    for(i=0;i<details.length;i++) {
+      if (details[i].tagName != "DETAILS" || 
+         !details[i].hasAttribute('open') || 
+         event.target == details[i]) {
+         continue;
+      }
+      details[i].removeAttribute("open");
+    }
+}
+</script>
+<!-- /Minimize spoiler when opening another -->
+</body></html>
